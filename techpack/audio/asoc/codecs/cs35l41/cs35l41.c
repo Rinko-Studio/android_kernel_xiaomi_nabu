@@ -45,7 +45,6 @@
 #include "wm_adsp.h"
 #include "cs35l41.h"
 #include <sound/cs35l41.h>
-
 static const char * const cs35l41_supplies[] = {
 	"VA",
 	"VP",

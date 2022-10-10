@@ -24,7 +24,7 @@ include $(MY_LOCAL_PATH)/soc/Android.mk
 include $(MY_LOCAL_PATH)/asoc/Android.mk
 include $(MY_LOCAL_PATH)/asoc/codecs/Android.mk
 include $(MY_LOCAL_PATH)/asoc/codecs/wcd934x/Android.mk
-ifeq ($(TARGET_PRODUCT), $(filter $(TARGET_PRODUCT), nabu))
+ifeq ($(CONFIG_ARCH_SM8150), y)
 include $(MY_LOCAL_PATH)/asoc/codecs/cs35l41_v2/Android.mk
 else
 include $(MY_LOCAL_PATH)/asoc/codecs/cs35l41/Android.mk

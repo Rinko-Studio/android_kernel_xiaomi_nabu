@@ -214,7 +214,7 @@ ifeq ($(KERNEL_BUILD), 1)
 	obj-y	+= sdm660_cdc/
 	obj-y	+= msm_sdw/
 	obj-y	+= wcd9360/
-ifeq ($(TARGET_PRODUCT), $(filter $(TARGET_PRODUCT), nabu))
+ifeq ($(CONFIG_ARCH_SM8150), y)
 	obj-y	+= cs35l41_v2/
 else
 	obj-y	+= cs35l41/
